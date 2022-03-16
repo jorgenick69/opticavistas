@@ -571,7 +571,7 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        
+       
 
 
     }
@@ -579,11 +579,13 @@
         width: 75%;
         height: 80%;
         min-height: 80vh;
-        background-color: #008351;
+        background-color: #217c59;
         display: flex;
         padding: 1em;
         border-radius: 0.4em;
         box-shadow: 0 0 4px black;
+        margin-right: 200px ;
+        
         
     }
     .derechapc{
@@ -757,7 +759,7 @@
     }
     .controlespc{
         position: absolute;
-        left: -10px;
+        right: 50px;
         top: 50%;
         transform: translateY(-50%);
         width: 10vw;
@@ -779,8 +781,8 @@
         margin: -0.8px;
         width: 90%;
         display: flex;
-        justify-content: left;
-        padding-left: 3vw !important;
+        justify-content: center;
+        
         padding: 10px;
         border-top: 2px solid rgb(255, 255, 255);
         border-bottom: 2px solid rgb(255, 255, 255);

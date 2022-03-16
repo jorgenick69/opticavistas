@@ -6,7 +6,9 @@
     text-decoration: none;
 }
 
-
+.pc{
+    display: none;
+}
 @media (max-width:500px){
     body{
         padding-top: 90px;
@@ -354,104 +356,168 @@
   
 }
 @media (min-width:1024px) {
+    a{
+        text-decoration: none;
+    }
+    .movil{
+        display: none!important;
+    }
     body{
-        padding-top: 90px;
+        padding-top: 120px;
         overflow-x: hidden !important;
-        background-color: rgb(196, 196, 196) !important;
+        background-color: rgba(196, 196, 196, 0.384) !important;
         display: flex;
     }
-   nav{
-       width: 100%;
-       height: 87px;
-       min-height: 87px;
-       background-color: #e0e1dd;
-       position: fixed;
-       top: 0 !important;
-       left: 0 !important;
-       z-index: +1;
-       box-shadow: 0 0 4px black;
-   }
+  .nav-pc{
+      position: fixed;
+      width: 100%;
+      height: 110px;
+      background-color: white;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 0 5px black;
+      z-index: +1;
+
+  }
+ 
+.nav-pc-arriba{
+height: 70%;
+overflow: hidden;
+position: relative;
+display: flex;
+align-items: center;
+}
+.logo-pc2{
+    width: 15% !important;
    
-   nav div{
-       width: 100%;
-       height: 50% !important;
-   }
-   .nav-arriba{
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-   }
-   .nav-barra{
-       display: flex;
-       width: 70%;
-       min-height: 70%;
-       background-color: white;
-       justify-content: center;
-       align-items: center;
-       border-radius: 4vw;
-       overflow: visible;
-       
-   }
-   .lupa{
-       color: rgb(196, 196, 196);
-       font-size: 20px;
-   }
-   .nav-barra form{
-      
-       width: 80%;
-       min-width: 80%;
-   }
-   .nav-barra form input{
-       padding: 1em;
-   }
-   .nav-barra input{
-       width: 100%;
-       min-width: 100%;
-       background: none;
-       border: none;
-       outline: 0px;
-   }
-   .nav-icono{
-       color: #1b263b;
-       width: 10%;
-       min-width: 10%;
-       display: flex;
-       justify-content: right;
-       align-items: center;
-   }
-   .nav-icono2{
-       color: #1b263b;
-       width: 10%;
-       min-width: 10%;
-       display: flex;
-       justify-content: left;
-       align-items: center;
-   }
-   .nav-abajo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    overflow: hidden !important;
 }
-.shop-icono{
-    color: #1b263b;
-    font-size: 3vw !important;
+.logo-pc2 img{
+   width:100%;
+}
+.barra-contenedor-pc{
+    width:50%;
+    height: 100%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.nav-abajo span{
-    color: #1b263b;
-    font-size: 2vw;
+.atendiendo-pc{
     display: flex;
+    width: 20%;
+    
+}
+.atendiendo-pc .shop-pc{
+    display: flex;
+    width: 30%;
     justify-content: center;
     align-items: center;
+    
 }
-
+.shop-pc span{
+    color: #05c57c;
+    font-size: 4vw;
+}
 .bold{
+    color: #05c57c !important;
     font-weight: bold;
-    color: #1b263b !important;
 }
+.reserva-pc{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.acciones-pc{
+   display: flex;
+   width: 20%;
+   justify-content: space-around;
+  
+  
+}
+.acciones-pc span{
+    color: rgb(70, 70, 70)!important;
+   font-size: 3vw !important;
+}
+.barra-contenedor-pc form{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fondo-barra-pc{
+    width: 95%;
+   height: 50%;
+    background-color: white ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4em;
+    overflow: hidden;
+    box-shadow: 0 0 4px black;
+}
+.barra-pc{
+    width: 90% !important;
+    height: 100%;
+}
+.barra-pc input{
+    width: 100%;
+    height: 90% ;
+    background-color: none;
+    border: none;
+    outline: none;
+}
+.barra-lupa-pc{
+  
+    width: 10% !important;
+    height: 100% !important;
+    background-color: #05c57c !important;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    
+}
+.barra-lupa-pc label{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    
+    
+}
+.nav-pc-abajo{
+    height: 30% !important;
+    width: 100%;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+}
+.nav-pc-abajo ul{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center !important;
+    align-content: center !important;
+}
+.nav-pc-abajo li a{
+    color: black !important;
+}
+.nav-pc-abajo li:hover{
+    background-color: rgb(240, 248, 255);
+    padding-left:2em ;
+    padding-right: 2em;
+    border-radius: 0.4em;
+    font-weight: bold;
+}
+
+
 .controlar-productos{
     margin-top: 1vw;
     width: 20%;
@@ -464,6 +530,13 @@
     align-items: center;
 
     
+}
+.controlar-productos form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .controlar-productos-titulo{
     display: flex;
@@ -483,7 +556,7 @@
 }
 .contenedor-fitro{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     align-content: center;
 
@@ -491,7 +564,7 @@
 .contenedor-fitro div{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 47%;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -505,9 +578,21 @@
 }
 .filtro-tamanio select{
     width: 100% !important;
+    border-radius: 0.4em;
+    outline: 0px;
+    border: none;
+    background-color: #e0e1dd;
+    padding-left: 0.4em;
+    padding-top: 0.4em;
 }
 .contenedor-fitro div input{
     width: 100%;
+    border-radius: 0.4em;
+    outline: 0px;
+    border: none;
+    background-color: #e0e1dd;
+    padding-left: 0.4em;
+    padding-top: 0.4em;
 }
 
 
@@ -590,5 +675,24 @@
       color: #05c57c;
       font-weight: bold;
   }
-  
+  .whatsapp{
+      position: fixed;
+      bottom: 1em;
+      right: 1em;
+
+  }
+  .whatsapp img{
+      width: 5vw;
+  }
+  .submit-pc{
+      margin-top: 2em;
+
+  }
+  .submit-pc input{
+      background-color: #05c57c;
+      border-radius: 0.4em;
+      height: 2em;
+      outline: 0px;
+      font-weight: bold;
+  }
 }

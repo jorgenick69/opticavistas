@@ -10,59 +10,99 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="nav-mobile">
-        <div class="nav-superior">
-            <div class="login"><span class="material-icons-outlined">
-                account_circle
-                </span></div>
-            <div class="titulo"><b><span style="font-family: Arial, Helvetica, sans-serif; ">VAN-HOUTEN</span></b></div>
-            <div class="carrito"><span class="material-icons-outlined">
-                add_shopping_cart
-                </span></div>
-        </div>
-
-        <div class="nav-inferior">
-           <div class="formu">
-              <div class="buscador">
-                <form action="">
-                    <div class="barra">
-                        <input type="text">
-                    </div>
-                    <div class="lupa">
-                     <label for="enviar">
-                        <span class="material-icons-outlined">
-                            search
-                            </span>
-                     </label>
-                         <input type="submit" id="enviar" style="display: none;">
-                    </div>
+    <nav class="nav-pc pc">
+        <div class="nav-pc-arriba">
+            <div class="logo-pc2"><img src="/img/LOGO2.png" alt=""></div>
+            <div class="barra-contenedor-pc">
+               <div class="fondo-barra-pc">
+                   <form action="">
+                   <div class="barra-pc">
+                       <input type="text" name="busqueda">
+    
+                   </div>
+                   <div class="barra-lupa-pc">
+                    <label for="subir-pc"><span class="material-icons-outlined lupa">
+                        search
+                        </span></label>
+                        <input type="submit" id="subir-pc" style="display: none;">
+                   </div>
                 </form>
-              </div>
-           </div>
-            <div class="reservas">
-                <span class="material-icons-outlined store" >
-                    store
-                    </span><span class="atendiendo">¡Estamos atendiendo! Reservá tu turno acá</span>
+               </div>
             </div>
-           
+            <div class="atendiendo-pc">
+                <div class="shop-pc">
+                    <span class="material-icons-outlined shop-icono">
+                        store
+                        </span>
+                </div>
+                <div class="reserva-pc">
+                    <span>Estamos atendiendo </span><a href="https://api.whatsapp.com/send?phone=5491157367876&text=Hola!😀  necesito ayuda con" target="_blanck"><span class="bold ">&nbsp;¡Reserva tu turno Aqui!</span></a>
+                </div>
+            </div>
+            <div class="acciones-pc">
+                <a href=""><span class="material-icons-outlined">
+                    account_circle
+                    </span></a>
+               <a href=""> <span class="material-icons-outlined">
+                shopping_cart
+                </span></a>
+                    <a href=""><span class="material-icons-outlined">
+                        dashboard
+                        </span></a>
+            </div>
+        </div>    
+        <div class="nav-pc-abajo">
+            <ul>
+                <li><a href="">Lentes de Sol</a></li>
+                <li><a href="">Armazones Recetados</a></li>
+                <li><a href="">Lentes de Contacto</a></li>
+                <li><a href="">Accesorios</a></li>
+                <li><a href="">Damas</a></li>
+                <li><a href="">Caballeros</a></li>
+                <li><a href="">Niños</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
         </div>
-    </nav>
+        </nav>
+        <nav class="movil">
+            <div class="nav-arriba">
+               <span class="material-icons-outlined nav-icono movil">
+                   menu
+                   </span>  
+                  <div class="nav-barra">
+                   <label for="subir"><span class="material-icons-outlined lupa">
+                       search
+                       </span></label>
+                   <form action="">
+                       <input type="text" name="busqueda" placeholder="Buscar en Van Houten">
+                       <input type="submit" id="subir" style="display: none;">
+                   </form>
+                  </div>
+               <span class="material-icons-outlined nav-icono2 movil">
+                   shopping_cart
+                   </span>  
+            </div>
+            <div class="nav-abajo">
+               <span class="material-icons-outlined shop-icono">
+                   store
+                   </span>
+                   <span>Estamos atendiendo </span><a href=""><span class="bold ">&nbsp;¡Reserva tu turno Aqui!</span></a>
+            </div>
+        </nav>
     <div class="slyder">
         <div class="slideshow-container">
 
+           
+          
             <div class="mySlides fade">
-              <img src="img/banner-promo-2_CL.jpg">
+              <img src="//cdn.shopify.com/s/files/1/0231/8811/1438/files/Lentes_de_contacto_20_OFF_2_1801x700.jpg?v=1646254178"">
             </div>
           
             <div class="mySlides fade">
-              <img src="img/banner.jpg">
-            </div>
-          
-            <div class="mySlides fade">
-              <img src="img/PROMO-Cabal-Banner-web-960x300px-01.jpg" >
+              <img src="https://cdn.shopify.com/s/files/1/0231/8811/1438/files/Sol_20_25_30_OFF_2_1801x700.jpg?v=1646254033" >
             </div>
             <div class="mySlides fade">
-              <img src="img/vuelta_al_cole_-_banner_web_-_1983_X_700.jpg" >
+              <img src="/img/vuelta_al_cole_-_banner_web_-_1983_X_700.jpg" >
             </div>    
           
             <a class="prev"  onclick="plusSlides(-1)">&#10094;</a>
@@ -70,7 +110,7 @@
           </div>
 
     </div>
-    <div class="botones-grandes">
+    <div class="botones-grandes movil">
         <div class="boton">
             <div class="arriba"><span>Lentes de Sol</span></div>
             <div class="abajo">
@@ -93,7 +133,7 @@
         </div>
     </div>
  
-    <div class="menu-scroll">
+    <div class="menu-scroll movil">
         <div>Accesorios</div>
         <div>Damas</div>
         <div>Caballeros</div>
@@ -101,12 +141,12 @@
         <div>Ayuda</div>
 
     </div>
-  <div class="whatsapp"><a href="https://api.whatsapp.com/send?phone=5491157367876&text=Hola!😀  necesito ayuda con" target="_blanck"><img src="https://img.icons8.com/color/96/000000/whatsapp--v1.png"/></a></div>
-<div class="promociones">
+  <div class="whatsapp "><a href="https://api.whatsapp.com/send?phone=5491157367876&text=Hola!😀  necesito ayuda con" target="_blanck"><img src="https://img.icons8.com/color/96/000000/whatsapp--v1.png"/></a></div>
+<div class="promociones movil">
     <div class="card">
         <img src="//cdn.shopify.com/s/files/1/0231/8811/1438/files/Cuadrados_y_rectangulares250x360_240x360_crop_center.jpg?v=1644269295" alt="">
     </div>
-    <div class="card">
+    <div class="card movil">
         <div class="card-arriba">
             <img src="img/prottoti_656x471.jpg" alt="">
         </div>
@@ -118,7 +158,7 @@
             <span class="agregar-carrito">Agregar al carrito</span>
         </div>
     </div>
-    <div class="card">
+    <div class="card movil">
         <div class="card-arriba">
             <img src="img/prottoti_656x471.jpg" alt="">
         </div>
@@ -130,7 +170,7 @@
             <span class="agregar-carrito">Agregar al carrito</span>
         </div>
     </div>
-    <div class="card">
+    <div class="card movil">
         <div class="card-arriba">
             <img src="img/prottoti_656x471.jpg" alt="">
         </div>
@@ -144,6 +184,163 @@
     </div>
    
 </div>
-<script src="/repo/js/slyder.js"></script>
+<div class="promociones-pc pc">
+    <div class="promociones-pc-iz">
+        <img src="//cdn.shopify.com/s/files/1/0231/8811/1438/files/Cuadrados_y_rectangulares250x360_240x360_crop_center.jpg?v=1644269295" alt="">
+    </div>
+    <div class="promociones-pc-de">
+       <button class="ante" id="ante">&#60;</button> 
+       <button class="post" id="poste">&#62;</button>
+        <div class="cards-pc">
+            <div class="card-pc">
+                <div class="card-pc-arr">
+                    <img src="/img/facebook.png" alt="">
+                </div>
+                <div class="card-pc-aba">
+                <span class="descuento-pc">Descuento <span>19%</span></span>
+                <span class="precio-anterior-pc">$19000</span>
+                <span class="precio-actual-pc">$15000</span>
+                <span class="card-titulo-pc">Lentes rayban aviator dsdsds</span>
+                <a class="agregar-carrito-pc" href=""><span >Agregar al carrito</span></a>
+                </div>
+              
+            </div>
+            <div class="card-pc">
+                <div class="card-pc-arr">
+                    <img src="/img/prottoti_656x471.jpg" alt="">
+                </div>
+                <div class="card-pc-aba">
+                <span class="descuento-pc">Descuento <span>19%</span></span>
+                <span class="precio-anterior-pc">$19000</span>
+                <span class="precio-actual-pc">$15000</span>
+                <span class="card-titulo-pc">Lentes rayban aviator dsdsds</span>
+                <a class="agregar-carrito-pc" href=""><span >Agregar al carrito</span></a>
+                </div>
+              
+            </div>
+            <div class="card-pc">
+                <div class="card-pc-arr">
+                    <img src="/img/prottoti_656x471.jpg" alt="">
+                </div>
+                <div class="card-pc-aba">
+                <span class="descuento-pc">Descuento <span>19%</span></span>
+                <span class="precio-anterior-pc">$19000</span>
+                <span class="precio-actual-pc">$15000</span>
+                <span class="card-titulo-pc">Lentes rayban aviator dsdsds</span>
+                <a class="agregar-carrito-pc" href=""><span >Agregar al carrito</span></a>
+                </div>
+              
+            </div>
+            <div class="card-pc">
+                <div class="card-pc-arr">
+                    <img src="/img/prottoti_656x471.jpg" alt="">
+                </div>
+                <div class="card-pc-aba">
+                <span class="descuento-pc">Descuento <span>19%</span></span>
+                <span class="precio-anterior-pc">$19000</span>
+                <span class="precio-actual-pc">$15000</span>
+                <span class="card-titulo-pc">Lentes rayban aviator dsdsds</span>
+                <a class="agregar-carrito-pc" href=""><span >Agregar al carrito</span></a>
+                </div>
+              
+            </div>
+            <div class="card-pc">
+                <div class="card-pc-arr">
+                    <img src="/img/gorjeo.png" alt="">
+                </div>
+                <div class="card-pc-aba">
+                <span class="descuento-pc">Descuento <span>19%</span></span>
+                <span class="precio-anterior-pc">$19000</span>
+                <span class="precio-actual-pc">$15000</span>
+                <span class="card-titulo-pc">Lentes rayban aviator dsdsds</span>
+                <a class="agregar-carrito-pc" href=""><span >Agregar al carrito</span></a>
+                </div>
+              
+            </div>
+        </div>
+      
+    </div>
+
+</div>
+<div class="promociones-pc pc">
+    <div class="promociones-pc-iz">
+        <img src="//cdn.shopify.com/s/files/1/0231/8811/1438/files/Cuadrados_y_rectangulares250x360_240x360_crop_center.jpg?v=1644269295" alt="">
+    </div>
+    <div class="promociones-pc-de">
+       <button class="ante2" id="ante">&#60;</button> 
+       <button class="post2" id="poste">&#62;</button>
+        <div class="cards-pc2">
+            <div class="card-pc">
+                <div class="card-pc-arr">
+                    <img src="/img/facebook.png" alt="">
+                </div>
+                <div class="card-pc-aba">
+                <span class="descuento-pc">Descuento <span>19%</span></span>
+                <span class="precio-anterior-pc">$19000</span>
+                <span class="precio-actual-pc">$15000</span>
+                <span class="card-titulo-pc">Lentes rayban aviator dsdsds</span>
+                <a class="agregar-carrito-pc" href=""><span >Agregar al carrito</span></a>
+                </div>
+              
+            </div>
+            <div class="card-pc">
+                <div class="card-pc-arr">
+                    <img src="/img/prottoti_656x471.jpg" alt="">
+                </div>
+                <div class="card-pc-aba">
+                <span class="descuento-pc">Descuento <span>19%</span></span>
+                <span class="precio-anterior-pc">$19000</span>
+                <span class="precio-actual-pc">$15000</span>
+                <span class="card-titulo-pc">Lentes rayban aviator dsdsds</span>
+                <a class="agregar-carrito-pc" href=""><span >Agregar al carrito</span></a>
+                </div>
+              
+            </div>
+            <div class="card-pc">
+                <div class="card-pc-arr">
+                    <img src="/img/prottoti_656x471.jpg" alt="">
+                </div>
+                <div class="card-pc-aba">
+                <span class="descuento-pc">Descuento <span>19%</span></span>
+                <span class="precio-anterior-pc">$19000</span>
+                <span class="precio-actual-pc">$15000</span>
+                <span class="card-titulo-pc">Lentes rayban aviator dsdsds</span>
+                <a class="agregar-carrito-pc" href=""><span >Agregar al carrito</span></a>
+                </div>
+              
+            </div>
+            <div class="card-pc">
+                <div class="card-pc-arr">
+                    <img src="/img/prottoti_656x471.jpg" alt="">
+                </div>
+                <div class="card-pc-aba">
+                <span class="descuento-pc">Descuento <span>19%</span></span>
+                <span class="precio-anterior-pc">$19000</span>
+                <span class="precio-actual-pc">$15000</span>
+                <span class="card-titulo-pc">Lentes rayban aviator dsdsds</span>
+                <a class="agregar-carrito-pc" href=""><span >Agregar al carrito</span></a>
+                </div>
+              
+            </div>
+            <div class="card-pc">
+                <div class="card-pc-arr">
+                    <img src="/img/gorjeo.png" alt="">
+                </div>
+                <div class="card-pc-aba">
+                <span class="descuento-pc">Descuento <span>19%</span></span>
+                <span class="precio-anterior-pc">$19000</span>
+                <span class="precio-actual-pc">$15000</span>
+                <span class="card-titulo-pc">Lentes rayban aviator dsdsds</span>
+                <a class="agregar-carrito-pc" href=""><span >Agregar al carrito</span></a>
+                </div>
+              
+            </div>
+        </div>
+      
+    </div>
+
+</div>
+<script src="/js/listar_producto_pc.js"></script>
+<script src="/js/slyder.js"></script>
 </body>
 </html>
